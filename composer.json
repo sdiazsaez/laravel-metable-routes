@@ -1,0 +1,36 @@
+{
+    "name": "larangular/metable-routes",
+    "description": "Routes for metables",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Diaz",
+            "email": "sdiaz.sz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0",
+        "larangular/support": "^0.1.0|^0.2.0",
+        "larangular/installable": "^0.1.0|^0.2.0",
+        "larangular/migration-package": "^0.1.0|^0.2.0",
+        "larangular/routing-controller": "^0.1.0|^0.2.0",
+        "larangular/metadata": "^0.1.0|^0.2.0"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Larangular\\MetableRoutes\\": "./src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Larangular\\MetableRoutes\\MetableRoutesServiceProvider"
+            ]
+        }
+    }
+}
