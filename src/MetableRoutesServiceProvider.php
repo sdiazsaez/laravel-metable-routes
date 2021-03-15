@@ -9,7 +9,6 @@ use Larangular\Metadata\Models\Metadata;
 class MetableRoutesServiceProvider extends ServiceProvider {
 
     public function boot(): void {
-        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
         Route::model('metadata', Metadata::class);
     }
 
