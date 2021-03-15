@@ -20,11 +20,11 @@ class RouteMethods {
         ])
              ->name('metadata.show');
 
-        Route::post('metadata', [
-            Gateway::class,
-            'store',
-        ])
+        Route::post('metadata', [Gateway::class, 'store'])
              ->name('metadata.store');
+
+        Route::match(['put', 'patch'], 'metadata/{metadata}', [Gateway::class, 'store'])
+             ->name('metadata.update');
     }
 
 }
